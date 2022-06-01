@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+<body>
+<br>
+  <div class="welcome ">
+    <h2 style="color: azure;">Phishinig Site Prediction</h2>
+  </div>
+
+  <div class="userinput">
+    <h2>Enter URL </h2>
+<br>
+    <form action='/predict' method="post">
+      <div class="input">
+        <input id="url" name="z1" type="text" width="48" height="48" size="50" required><br>
+        <button class="button" type="Summarize">Predict</button>
+      </div>
+
+    </form>
+    <br>
+    <br>
+    <div id='result'>
+      {{ prediction_text }}
+    </div>
+    
+  </div>
+
+</body>
+
+
+  
+
+</head>
+
+<body>
+<br><br><br><br>
+  <div class="welcome ">
+    <h2 style="color: azure;">Phishinig Site Prediction</h2>
+  </div>
+
+  <div class="userinput">
+    <h2>Enter URL </h2>
+<br>
+    <form action='/predict' method="post">
+      <div class="input">
+        <input id="url" name="z1" type="text" width="48" height="48" size="50" required><br>
+        <button class="button" type="Summarize">Predict</button>
+      </div>
+
+    </form>
+    <br>
+    <br>
+    <div id='result'>
+      {{ prediction_text }}
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
